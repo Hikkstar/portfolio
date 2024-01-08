@@ -1,0 +1,1165 @@
+@charset "UTF-8";
+
+/*親要素指定*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+a, li, span,nav,p{
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+}
+
+img{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  margin:0;
+  border-top: solid 3px #FFCC33;
+}
+
+#header{
+   position: sticky;
+   top: 0px;
+   height:80px;
+   background: #fff;
+   z-index: 1000;
+   box-shadow: 0 0 5px rgb(0 0 0 / 1%);
+ }
+
+nav{
+  margin:0;
+  position: absolute;
+  left: 60px;
+}
+
+nav ul li{
+  float: left;
+}
+nav ul li a:hover{
+  color: #CCCCCC;
+}
+
+ul li a:hover{
+  color: #cccccc;
+}
+
+nav ul::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+
+span{
+  font-size: 10px;
+}
+
+footer{
+  background-color: #222222;
+  max-height: 600px;
+}
+
+/*ハンバーガーメニュー*/
+#nav-drawer{
+  display: none;
+}
+
+/*header部分*/
+#logo{
+  margin-top: 20px;
+}
+
+.komoku{
+  margin: 1vw 2vw 0vw;
+  padding-top: 3px;
+  text-align: center;
+}
+
+.komoku_right{
+  float: left;
+  position: absolute;
+  right: 30px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 6px 3px 6px;
+}
+
+.accommodation{
+  border: solid 1px #808000;
+  color: white;
+  background-color: #808000;
+  margin-right: 80px;
+  font-size: 0.9vw;
+}
+
+/* ul li a:not(.accommodation){
+  color: black;
+} */
+
+.english{
+  border: solid 1px #808000;
+  font-size: 0.9vw;
+}
+
+.span_alpha{
+  position: relative;
+  bottom: 6px;
+}
+
+/*メイン画像部分*/
+.maingra_contents{
+  background-image: url(img/fascinations_img01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 500px;
+  /*margin-top: 80px;*/
+  margin-bottom: 100px;
+}
+
+.sentence_inner{
+  color: #fff;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 30px;
+}
+
+.maingra_sns ul li{
+  float: left;
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.maingra_sns ul li:hover{
+  opacity: 0.5;
+}
+
+.maingra_tw_pad{
+  padding: 0px 40px 10px;
+}
+
+/*ご宿泊予約部分*/
+.plan_border{
+  border: solid 1px #808000;
+  width: 90%;
+  height: 200px;
+  margin: auto;
+}
+
+.accommodation_bottom{
+  padding-left: 40px;
+  padding-top: 30px;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 0px 30px 0px; */
+}
+
+.padding_op{
+  padding: 0px 30px 0px;
+}
+
+.float_op{
+  float: right;
+  position: absolute;
+  right: 120px;
+  top: 780px;
+}
+/* .option_right{
+  padding-left: 300px;
+} */
+
+.vacancy{
+  text-align: center;
+  padding: 10px 35px 10px;
+  border: solid 1px #808000;
+  color: white;
+  background-color: #808000;
+}
+
+.vacancy:hover{
+  opacity: 0.5;
+  background-color: #fff;
+  color: #808000;
+}
+
+.vacancy_pad{
+  margin-top: 10px;
+}
+
+/* .clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+.p_padding{
+  float: left;
+  color: #808000;
+  padding-left: 25px;
+}
+
+/*お知らせの部分*/
+
+.news_color{
+  margin-top: 40px;
+  background: #FFEEFF;
+  height: 490px;
+}
+
+.news_font{
+  text-align: center;
+  font-size: 2vw;
+  position: relative;
+  top: 20px;
+}
+
+.img_news{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border_1{
+  border-top: 1px solid #DCDCDC;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.border_2{
+  border-top: 1px solid #DCDCDC;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.border_3{
+  border-top: 1px solid #DCDCDC;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+.border_4{
+  border-top: 1px solid #DCDCDC;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.sentence_1{
+  padding-left: 15vw;
+  padding-top: 30px;
+  font-size: 1.4vw;
+}
+.sentence_2{
+  padding-left: 15vw;
+  padding-top: 30px;
+  font-size: 1.4vw;
+}
+.sentence_3{
+  padding-left: 15vw;
+  padding-top: 30px;
+  font-size: 1.4vw;
+}
+
+.info_pad{
+  padding: 3px 1px 3px;
+  border: solid 1px #808000;
+  color: white;
+  background-color: #808000;
+  margin: 0px 15px;
+}
+
+.list_float{
+  float: right;
+  position: absolute;
+  right: 130px;
+  margin-top: 20px;
+  font-size: 1vw;
+}
+
+.list_float{
+  padding: 5px 25px 5px;
+  border: solid 1px #808000;
+  color: #808000;
+  background-color: #fff;
+}
+
+.list_float:hover{
+  opacity: 0.5;
+  color: #fff;
+  background-color:#808000;
+}
+
+/*魅力の部分*/
+
+.fascinations_pic1{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.fascinations_font{
+  text-align: center;
+  font-size: 2vw;
+  position: relative;
+  top: 20px;
+}
+
+.image_width{
+  max-width: 100%;
+}
+
+.fascinations_txt{
+  text-align: center;
+  margin-top: 60px;
+  line-height: 40px;
+  font-size: 1.2vw;
+}
+
+/*ガイドの部分*/
+
+.guide_color{
+  margin-top: 40px;
+  background: #FFEEFF;
+  height: 1100px;
+}
+
+.guide_font{
+  text-align: center;
+  font-size: 2vw;
+  position: relative;
+  top: 20px;
+}
+
+.guide_top{
+  padding-top: 10px;
+}
+
+.guide_flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex_items{
+  padding: 30px 15px 10px;
+  /* width: 33.33%; */
+  box-sizing: border-box;
+}
+
+.img_menu{
+  text-align: center;
+}
+
+.img_menu img{
+  max-width: 100%;
+}
+
+.guide_white{
+  border: 1px solid #fff;
+  background-color: #fff;
+  padding: 30px 13px 20px;
+}
+
+.img_menu_pad{
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.details{
+  margin-left: 276px;
+  padding-top: 20px;
+  font-size: 1vw;
+}
+
+.details_border{
+  border: solid 1px #808000;
+  padding: 8px 3px 8px;
+  color: #808000;
+}
+
+.details_border:hover{
+  opacity: 0.5;
+  color: #fff;
+  background-color: #808000;
+}
+
+/*SNSロゴ部分（余白）*/
+
+.sns_white{
+  background-color: #fff;
+  height: 80px;
+}
+
+section ul li{
+  float: left;
+}
+
+section ul li{
+  padding: 40px 5px 0px;
+}
+
+section ul{
+  margin-left: 80px;
+}
+
+section ul::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.twitter{
+  border: 1px solid skyblue;
+  border-radius: 3px;
+  background: #008BBB;
+  padding: 1px 10px 1px;
+  color: #fff;
+  font-size: 0.1vw;
+}
+.good{
+  border: 1px solid skyblue;
+  border-radius: 3px;
+  background: #005FFF	;
+  padding: 1px 10px 1px;
+  color: #fff;
+  font-size: 0.1vw;
+}
+
+/*footer部分*/
+
+.footer_flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_items{
+  padding: 60px 70px 30px;
+  margin-left: 10px;
+}
+
+footer div p{
+  color:white;
+  font-size: 1.1vw;
+  line-height: 30px;
+}
+
+.top_button{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 20px;
+}
+
+footer div img::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.border_black{
+  border: solid 0.5px #000;
+  width: 80%;
+  margin: auto;
+}
+
+.copyright{
+  color: #fff;
+  font-size: 1vw;
+  /* padding: 5px 190px 10px; */
+  padding: 10px 0px 10px;
+  text-align: center;
+}
+
+footer ul li{
+  float: left;
+}
+
+footer ul li::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.tw_pad{
+  padding-left: 5px;
+}
+
+footer div a:hover{
+  opacity: 0.5;
+}
+
+.footer_normal{
+  display: none;
+}
+
+/*メディアクエリ*/
+
+@media screen and (max-width:1250px) {
+  /*footer部分*/
+ /* .guide_color{
+  height: 1600px;
+ } */
+}
+
+@media screen and (max-width:1300px) {
+  .footer_none{
+    display: none;
+  }
+  .footer_normal{
+    display: block;
+  }
+
+  footer .footer_normal{
+  position: relative;
+  top: 10px;
+  }
+
+  .border_black{
+    margin-top: 10px;
+  }
+
+  .media_footer{
+  display: block;
+  text-align: center;
+  line-height: 40px;
+
+  }
+
+}
+
+
+@media screen and (max-width:1400px) {
+  .img_menu_pad{
+    width: 400px;
+  }
+  .guide_color{
+    height: 1200px;
+  }
+}
+
+@media screen and (max-width:1306px) {
+  .guide_color{
+    height: 1700px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .news_font{
+    font-size: 2vw;
+  }
+  .fascinations_font{
+    font-size: 2vw;
+  }
+  .guide_font{
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width:876px) {
+  .guide_color{
+    height: 3200px;
+  }
+}
+
+@media screen and (max-width:836px) {
+  /*footer部分*/
+  .guide_color{
+    height: 3200px;
+  }
+}
+
+@media screen and (max-width:930px) {
+  /*タイトル部分*/
+  .wrap{
+    overflow-x: hidden;
+  }
+
+/*ヘッダー部分*/
+ /*#header{
+   position: static;
+   height:0px;
+　 box-shadow: none;
+}*/
+
+  /*ハンバーガー部分*/
+  header{
+    /* padding: 10px; */
+    /* background: skyblue; */
+  }
+  #nav-drawer{
+    position: relative;    /*positionを設定する前のもと(相対の位置で固定される)の位置を表す*/
+    display: block;        /*改行できるように表示形式をblockに設定する*/
+    top: 25px;
+    margin-left: 20px;
+  }
+
+  .nav-unshown{
+    display: none;
+  }
+
+  #nav-open{
+    display: inline-block;
+    position:fixed;
+    width: 30px;
+    height: 22px;
+    vertical-align: middle;
+    z-index:9999;
+  }
+
+  #nav-open span, #nav-open span:before, #nav-open span:after{  /*ここは疑似要素で、特定の要素のある部分に:before,after(コンテンツの直前、直後)を設定する*/
+    /*ここの三つのセレクタ(上からspan,span:before,span:after)で三つの線を構成している*/
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #555;
+    display: block;
+    content: "";           /*疑似要素を使うときに必要(spanと, spanの直前と直後に空のコンテンツを指定する)*/
+    cursor: pointer;
+  }
+
+ #nav-open span:before{ /*spanコンテンツの直前から（ここではbottom:-6px)つまり下に6px移動している*/
+    bottom: -6px;
+   /* top: 6px; 上の指定と同じ意味を表す */
+ }
+
+ #nav-open span:after{ /*spanコンテンツの直後から（ここではbottom:-12px)つまり下に12px移動している*/
+   bottom: -12px;
+  /* top: 12px 上の指定と同じ意味を表す*/
+ }
+
+
+  #nav-close{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+  }
+
+  .nav-content{
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 90%;
+    max-width: 330px;
+    height: 100%;
+    background: #fff;
+    transition: .3s ease-in-out;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+  }
+
+  #nav-input:checked ~ #nav-close{
+    display: block;
+    opacity: .5;
+  }
+  #nav-input:checked ~ .nav-content{
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
+  }
+
+  /* .my-parts{
+  display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+  top: 10px;
+  right: 10px;
+	border: 1px solid rgba(0,0,0,.1);
+	cursor: pointer;
+  }
+.my-parts span::before,
+.my-parts span::after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 45%;
+	left: 60%;
+	width: 35%;
+	height: 10%;
+	margin: -2% 0 0 -30%;
+	background: #000000;
+}
+.my-parts span::before {
+	transform: rotate(-45deg);
+}
+.my-parts span::after {
+	transform: rotate(45deg);
+} */
+
+  .ham_menu {
+    background: #fff;
+    padding: 10px 0px 20px;
+    /*border-top: 1px solid #cccccc;*/
+    margin-top: 10px;
+    font-size: 14px;
+    /*border-radius: 5px;*/
+  }
+
+  .ham_menu a{
+    margin-left: 30px;
+  }
+
+ div .ham_menu a:hover{
+    opacity: 0.5;
+  }
+
+div .nav-content {
+  display: block;
+}
+  .nav-content ul li a{
+    position: relative;
+    left: 30px;
+  }
+
+
+  .ham_01{
+    /*margin-top: 1px;*/
+    padding: 20px 0px 20px;
+    background: #fff;
+    border-top: 1px solid #DCDCDC;
+    /*border-radius: 5px;*/
+    font-size: 10px;
+  }
+/*header部分*/
+ nav ul li{
+   float: none;
+ }
+
+#logo{
+  position: relative;
+  top:15px;
+  margin-top: 15px;
+　width: 100vw;
+  /*height: 100vh;*/
+  
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+ nav{
+   position: static;
+   top: 0;
+ }
+
+ nav ul li a{
+   pointer-events: none;
+ }
+
+ .komoku{
+   display: none;
+ }
+
+ .komoku_right{
+   display: none;
+ }
+
+ .media_center{
+   display: block;
+   text-align: center;
+ }
+
+ /*メイン画像部分*/
+.maingra_contents{
+  max-height: 200px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+.sentence_inner{
+  margin-top: 10px;
+  font-size: 2vw;
+}
+
+.maingra_sns ul li img{
+  width: 3vw;
+  height: 3vw;
+}
+
+.maingra_tw_pad{
+  padding: 0px 30px 0px;
+}
+
+
+ /*ご宿泊予約部分*/
+ .plan_border{
+   height: 150px;
+   width: 70%;
+ }
+
+.accommodation_bottom{
+  font-size: 2vw;
+  text-align: center;
+  padding: 0;
+}
+
+select{
+  font-size: 1.5vw;
+}
+
+.flex{
+
+}
+
+.padding_op{
+  font-size: 1.5vw;
+  padding: 0;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.float_op{
+  position: static;
+  margin-right: 10px;
+  font-size: 1vw;
+  display: block;
+  margin-top: 5px;
+}
+
+.p_padding{
+  /* font-size: 0.5em; */
+  margin-left: 35px;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.font_cancel{
+  font-size: 1vw;
+}
+
+.vacancy{
+  padding: 5px 10px 5px;
+  font-size: 1vw;
+}
+
+.vacancy_pad{
+  margin-top: 5px;
+ }
+
+/*お知らせの部分*/
+.news_color{
+  height: 460px;
+}
+
+.news_color p img{
+  width: 80vw;
+  height: 40px;
+}
+
+div p .img_news{
+  width: 20vw;
+}
+
+/*ガイドの部分*/
+/* .guide_color{
+  height: 1700px;
+} */
+}
+
+@media screen and (max-width:635px) {
+  footer{
+    max-height: 800px;
+  }
+  .news_font{
+    font-size: 3vw;
+  }
+  .fascinations_font{
+    font-size: 3vw;
+  }
+  .guide_font{
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width:1400px){
+  .accommodation{
+    margin-right: 100px;
+  }
+  .img_menu img{
+   width: 30vw;
+  }
+  .guide_color{
+    height: 1250px;
+  }
+
+}
+
+@media screen and (min-width:1700px) {
+
+ .border_black{
+
+ }
+
+/*お知らせの部分*/
+.news_color{
+  height: 530px;
+}
+
+.sentence_1{
+  font-size: 1.2vw;
+  margin-left: 150px;
+}
+.sentence_2{
+  font-size: 1.2vw;
+  margin-left: 150px;
+}
+.sentence_3{
+  font-size: 1.2vw;
+  margin-left: 150px;
+}
+
+ /*ガイドの部分*/
+ .guide_color{
+  height: 1300px;
+ }
+
+ .guide_flex{
+   display: block;
+  }
+  .flex_items{
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 30px 70px 20px;
+  }
+  .img_menu img{
+   width: 40vw;
+  }
+  .details{
+    margin-left: 280px;
+  }
+}
+
+@media screen and (max-width:590px) {
+  /*ご宿泊予約の部分*/
+  .plan_border{
+    display: none;
+  }
+  /*お知らせの部分*/
+  .news_color p img{
+    width: 100px;
+    height: 30px;
+  }
+  .sentence_1{
+    padding-left: 10vw;
+    padding-top: 30px;
+    padding-right: 30px;
+    font-size: 1.4vw;
+  }
+  .sentence_2{
+    padding-left: 10vw;
+    padding-top: 30px;
+    padding-right: 30px;
+    font-size: 1.4vw;
+  }
+  .sentence_3{
+    padding-left: 10vw;
+    padding-top: 30px;
+    padding-right: 30px;
+    font-size: 1.4vw;
+  }
+
+  .info_pad{
+    display: none;
+  }
+  .list_float{
+    display: none;
+  }
+  .news_color{
+    height: 330px;
+  }
+  .border_1{
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width:506px) {
+  .fascinations_txt{
+    line-height: 20px;
+  }
+  /* .copyright{
+    display: none;
+  } */
+
+}
+
+@media screen and (max-width:527px) {
+  .guide_color{
+    height: 3200px;
+  }
+  .copyright{
+    color: #fff;
+    font-size: 1vw;
+    /* padding: 5px 190px 10px; */
+    margin: 10px 0px 0px;
+    padding: 10px 0px 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:432px) {
+  .guide_color{
+    height: 3300px;
+  }
+  .copyright{
+    color: #fff;
+    font-size: 1vw;
+    margin: 10px 0px 70px;
+    padding: 10px 0px 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:427px) {
+  .guide_color{
+    height: 3500px;
+  }
+  .copyright{
+    color: #fff;
+    font-size: 1vw;
+    /* padding: 5px 190px 10px; */
+    margin: 10px 0px 0px;
+    padding: 10px 0px 10px;
+    text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width:409px) {
+  .details_border{
+    display: none;
+  }
+@media screen and (max-width:410px) {
+  #logo{
+    margin-top: -8px;
+  }
+  .sentence_inner{
+    display:none;
+  }
+  .media_none{
+    display: none;
+  }
+  .maingra_contents{
+    height: 40vw;
+  }
+  .image_width{
+    height: 40vw;
+  }
+  .img_menu_pad{
+    display: block;
+    height: 50vw;
+  }
+  .media_p{
+    font-size: 3vw;
+    text-align: center;
+  }
+  .media_dis{
+    display: none;
+  }
+  .fascinations_txt{
+    margin: 20px 30px 0px;
+  }
+  .guide_color{
+    height: 2400px;
+  }
+  .twitter{
+    display: none;
+  }
+  .good{
+    display: none;
+  }
+  .news_font{
+    font-size: 3vw;
+    margin-bottom: 30px;
+  }
+  .fascinations_font{
+    font-size: 3vw;
+  }
+  .guide_font{
+    font-size: 3vw;
+  }
+  .news_color{
+    margin-top: -30px;
+    height: 250px;
+  }
+  .border_1{
+    margin-bottom: -15px;
+  }
+  .border_2{
+    margin-top: -2px;
+  }
+  .border_3{
+    margin-top: -1px;
+  }
+  .border_4{
+    margin-top: -1px;
+  }
+  .news_font{
+    margin-top: 30px;
+  }
+  .sentence_1{
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .sentence_2{
+    font-size: 10px;
+    margin-top: -15px;
+    margin-bottom: 8px;
+  }
+  .sentence_3{
+    font-size: 10px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
+  .media_footer{
+    font-size: 10px;
+  }
+  .copyright{
+    font-size: 7px;
+  }
+  .media_font{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:370px) {
+  .guide_color{
+    max-height: 2250px;
+  }
+}
+  @media screen and (max-width:340px) {
+    .guide_color{
+      max-height: 2100px;
+    }
+  }
+  @media screen and (max-width:320px) {
+    .guide_color{
+      max-height: 2050px;
+    }
+  }
